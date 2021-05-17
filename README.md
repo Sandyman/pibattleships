@@ -55,8 +55,7 @@ def start_turn():
     move (attack a square). 
     """
     s = input('Your move> ')
-    battleship.attack(s)
-
+    battleship.attack_event(s)
 
 
 @battleship.on()
