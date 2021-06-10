@@ -3,7 +3,7 @@ class DataModel:
         self.__rows = 8
         self.__columns = 8
 
-        self.__data = [list([None] * rows)] * columns
+        self.__data = [[None] * rows for _ in range(columns)]
 
     def put(self, row, column, item):
         """
